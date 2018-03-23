@@ -1,0 +1,31 @@
+// Typography
+
+
+%font-serif {
+    font-family: Georgia, Times, serif;
+}
+
+%font-sans {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+::selection {
+    background-color: #3554bb;
+    color: $color_white;
+}
+
+html {
+    -webkit-font-smoothing: antialiased; // Fix fatty fonts
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: regular;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    @extend %font-sans;
+}
+
+a {
+    color: inherit;
+}
+
